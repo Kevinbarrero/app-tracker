@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/itis-frontend-app/static/js/main.5d4aab71.js",
+    "static/media/backgroud.jpg": "/itis-frontend-app/static/media/backgroud.e0821d726f20300255bc.jpg",
+    "index.html": "/itis-frontend-app/index.html",
+    "main.5d4aab71.js.map": "/itis-frontend-app/static/js/main.5d4aab71.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5d4aab71.js"
+  ]
+}
