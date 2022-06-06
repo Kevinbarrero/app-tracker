@@ -1,0 +1,69 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "requireConfigFile": false
+  },
+  "plugins": ["prettier"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules"
+  ],
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "prettier/prettier": "error",
+    "prefer-destructuring": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.test.js"
+      ],
+      "settings": {
+        "jest": {
+          "version": 27
+        }
+      },
+      "env": {
+        "jest": true
+      },
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest/style"
+      ]
+    },
+    {
+      "files": [
+        "cypress/**/*.spec.js"
+      ],
+      "env": {
+        "cypress/globals": true
+      },
+      "plugins": [
+        "cypress"
+      ]
+    }
+  ]
+}
